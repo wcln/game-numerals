@@ -1,14 +1,14 @@
 [
   {
-    "number_text": "Twenty-Six",
+    "numeral": "Twenty-Six",
     "answer": 26
   },
   {
-    "number": "Fifty-Five",
+    "numeral": "Fifty-Five",
     "answer": 55
   },
   {
-    "number": "One Hundred and Fifty-Eight",
+    "numeral": "One Hundred and Fifty-Eight",
     "answer": 158
   }
 ]

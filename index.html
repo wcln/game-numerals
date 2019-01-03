@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>WCLN - Place Value</title>
+	<title>WCLN - Numerals</title>
 	<meta charset="utf-8"/>
 	<link rel="stylesheet" type="text/css" href="style/style.css"/>
 	<link rel="shortcut icon" href="images/favicon.ico"/>
@@ -18,16 +18,17 @@
 			<div class="row">
 				<img src="images/logo.png" id="logo">
 			</div>
-      <div id="number" class="row">
+      <div id="numeral" class="row">
 			</div>
-			<div id="place-value" class="row">
-				<p></p>
+			<div id="answer" class="row">
+				<input id="answer-input" type="text" name="answer"/>
+				<button id="enter" onclick="check()">Enter</button>
 			</div>
 			<div id="restart" class="row">
 				<button onclick="restart()">Restart</button>
 			</div>
 			<div id="instructions" class="row">
-				<p>Click on the digit that corresponds with the place value</p>
+				<p>Enter the number that corresponds with the numeral.</p>
 			</div>
     </div>
   </div>

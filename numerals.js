@@ -1,18 +1,14 @@
 /**
  * BCLearningNetwork.com
- * Place Value
+ * Numerals
  * Colin Bernard
- * November 2018
+ * January 2019
  */
 
 var STAGE_WIDTH, STAGE_HEIGHT;
 
-var questions = [
+var questions = [];
 
-];
-
-var placeValues = ["Ones", "Tens", "Hundreds", "Thousands", "Ten Thousands", "Hundred Thousands", "Millions", "Ten Millions", "Hundred Millions", "Billions"]
-var decimalPlaceValues = ["Tenths", "Hundredths", "Thousandths", "Ten-thousandths", "Hundred-thousandths", "Millionths"];
 
 var counter = 0;
 var removedPieces = [];
@@ -60,17 +56,23 @@ function initGraphics() {
   // Load first question.
   updateQuestion();
 
-  $("#number, #place-value").css("visibility", "visible");
+  $("#numeral, #answer").css("visibility", "visible");
 
   stage.update();
 }
 
 function initListeners() {
-  $(".digit").unbind('click').click(function() {
-    if (this.id === "correct") {
-      correct();
-    } else {
-      incorrect();
+  // Get the input field
+  var input = document.getElementById("answer-input");
+
+  // Execute a function when the user releases a key on the keyboard
+  input.addEventListener("keyup", function(event) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Number 13 is the "Enter" key on the keyboard
+    if (event.keyCode === 13) {
+      // Trigger the button element with a click
+      document.getElementById("enter").click();
     }
   });
 }
@@ -127,8 +129,8 @@ function restart() {
   }
 
   $("#restart").css("visibility", "hidden");
-  $("#place-value").css("display", "block");
-  $("#number").css("display", "inline-block");
+  $("#answer").css("display", "block");
+  $("#numeral").css("display", "inline-block");
 }
 
 function endGame(){
@@ -137,70 +139,29 @@ function endGame(){
     stage.removeChild(piece);
   }
 
-  $("#place-value, #number").fadeOut(1000, "swing", function() { $("#restart").css("visibility", "visible"); }).css("display", "none");
+  $("#answer, #numeral").fadeOut(1000, "swing", function() { $("#restart").css("visibility", "visible"); }).css("display", "none");
 }
 
 function updateQuestion() {
   var currentQuestion = questions[counter];
 
-  var numberHTML = "";
-
-  var correctIndex = -1; // ?
-
-  var numberString = currentQuestion.number.toString();
-
-  // Determine correct answer index based on place value string.
-  if (numberString.includes('.')) {
-    if (decimalPlaceValues.includes(currentQuestion.placeValue)) {
-      let placeValueIndex = decimalPlaceValues.indexOf(currentQuestion.placeValue);
-      correctIndex = numberString.indexOf('.') + 1 + placeValueIndex;
-    } else if (placeValues.includes(currentQuestion.placeValue)) {
-      let placeValueIndex = placeValues.indexOf(currentQuestion.placeValue);
-      correctIndex = numberString.indexOf('.') - 1 - placeValueIndex;
-    } else {
-      alert("Invalid place value supplied.");
-    }
-  } else {
-    if (placeValues.includes(currentQuestion.placeValue)) {
-      let placeValueIndex = placeValues.indexOf(currentQuestion.placeValue);
-      correctIndex = numberString.length - 1 - placeValueIndex;
-    } else {
-      alert("Invalid place value supplied.");
-    }
-  }
-
-  // Load HTML number div.
-  var characters = numberWithSpaces(currentQuestion.number).split("");
-  var spaceOffset = 0;
-  for (var i = 0; i < characters.length; i++) {
-    if ('0123456789'.indexOf(characters[i]) !== -1) {
-      if (i - spaceOffset === correctIndex) {
-        numberHTML += '<span class="digit" id="correct">' + characters[i] + '</span>';
-
-      } else {
-        numberHTML += '<span class="digit">' + characters[i] + '</span>';
-      }
-
-    } else {
-
-      if (characters[i] === ' ') {
-        spaceOffset++;
-      }
-
-      numberHTML += characters[i];
-    }
-  }
-
-
-
-  $("#number").html(numberHTML);
-  $("#place-value > p").html(currentQuestion.placeValue);
+  $("#numeral").html(currentQuestion.numeral);
 
   initListeners();
 }
 
 function update() {
   stage.update();
+}
+
+function check() {
+  var answer = $("#answer > input").val();
+  if (answer == questions[counter].answer) {
+    correct();
+  } else {
+    incorrect();
+  }
+  $("#answer > input").val("");
 }
 
 //////////////////////// PRELOADJS FUNCTIONS
