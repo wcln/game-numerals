@@ -1,82 +1,14 @@
 [
   {
-    "number": 534.12,
-    "placeValue": "Tens"
+    "number_text": "Twenty-Six",
+    "answer": 26
   },
   {
-    "number": 12.643,
-    "placeValue": "Ones"
+    "number": "Fifty-Five",
+    "answer": 55
   },
   {
-    "number": 1000000,
-    "placeValue": "Thousands"
-  },
-  {
-    "number": 2.537,
-    "placeValue": "Tenths"
-  },
-  {
-    "number": 757643,
-    "placeValue": "Hundreds"
-  },
-  {
-    "number": 456246.175,
-    "placeValue": "Ten Thousands"
-  },
-  {
-    "number": 33.5,
-    "placeValue": "Tenths"
-  },
-  {
-    "number": 563.664,
-    "placeValue": "Thousandths"
-  },
-  {
-    "number": 9642.664,
-    "placeValue": "Hundredths"
-  },
-  {
-    "number": 333.22,
-    "placeValue": "Ones"
-  },
-  {
-    "number": 534.12,
-    "placeValue": "Tens"
-  },
-  {
-    "number": 12.643,
-    "placeValue": "Ones"
-  },
-  {
-    "number": 1000000,
-    "placeValue": "Thousands"
-  },
-  {
-    "number": 2.537,
-    "placeValue": "Tenths"
-  },
-  {
-    "number": 757643,
-    "placeValue": "Hundreds"
-  },
-  {
-    "number": 456246.175,
-    "placeValue": "Ten Thousands"
-  },
-  {
-    "number": 33.5,
-    "placeValue": "Tenths"
-  },
-  {
-    "number": 563.664,
-    "placeValue": "Thousandths"
-  },
-  {
-    "number": 9642.664,
-    "placeValue": "Hundredths"
-  },
-  {
-    "number": 333.22,
-    "placeValue": "Ones"
+    "number": "One Hundred and Fifty-Eight",
+    "answer": 158
   }
 ]
