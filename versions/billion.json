@@ -1,0 +1,82 @@
+[
+  {
+    "number": 534,
+    "placeValue": "Tens"
+  },
+  {
+    "number": 3412,
+    "placeValue": "Ones"
+  },
+  {
+    "number": 1000000,
+    "placeValue": "Thousands"
+  },
+  {
+    "number": 2537423,
+    "placeValue": "Millions"
+  },
+  {
+    "number": 757643,
+    "placeValue": "Hundreds"
+  },
+  {
+    "number": 1978456246,
+    "placeValue": "Billions"
+  },
+  {
+    "number": 335,
+    "placeValue": "Tens"
+  },
+  {
+    "number": 563664,
+    "placeValue": "Thousands"
+  },
+  {
+    "number": 9642664,
+    "placeValue": "Hundreds"
+  },
+  {
+    "number": 359874928,
+    "placeValue": "Ten Millions"
+  },
+  {
+    "number": 24534,
+    "placeValue": "Tens"
+  },
+  {
+    "number": 12643,
+    "placeValue": "Ones"
+  },
+  {
+    "number": 1276000,
+    "placeValue": "Ten Thousands"
+  },
+  {
+    "number": 537905874,
+    "placeValue": "Ten Millions"
+  },
+  {
+    "number": 757643,
+    "placeValue": "Hundreds"
+  },
+  {
+    "number": 38456246,
+    "placeValue": "Hundred Thousands"
+  },
+  {
+    "number": 1897643092,
+    "placeValue": "Hundred Millions"
+  },
+  {
+    "number": 297584,
+    "placeValue": "Ten Thousands"
+  },
+  {
+    "number": 9642,
+    "placeValue": "Hundreds"
+  },
+  {
+    "number": 146984,
+    "placeValue": "Ones"
+  }
+]

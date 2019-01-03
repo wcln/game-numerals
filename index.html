@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WCLN - Place Value</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="style/style.css"/>
+	<link rel="shortcut icon" href="images/favicon.ico"/>
+  <script src="https://bclearningnetwork.com/lib/jquery/jquery-3.2.1.min.js"></script>
+	<script src="https://bclearningnetwork.com/lib/createjs/createjs-2015.11.26.min.js"></script><!-- CreateJS library hosted on BCLN server -->
+	<script type="text/javascript" src="place_value.js"></script><!-- the main game JS file -->
+</head>
+<body onload="init();"><!-- body onload calls function to initialize game -->
+  <div id="container">
+    <canvas id="gameCanvas" width="457" height="362">
+    	<!-- game will be rendered here -->
+    </canvas>
+    <div id="overlay">
+			<div class="row">
+				<img src="images/logo.png" id="logo">
+			</div>
+      <div id="number" class="row">
+			</div>
+			<div id="place-value" class="row">
+				<p></p>
+			</div>
+			<div id="restart" class="row">
+				<button onclick="restart()">Restart</button>
+			</div>
+			<div id="instructions" class="row">
+				<p>Click on the digit that corresponds with the place value</p>
+			</div>
+    </div>
+  </div>
+</body>
+</html>
