@@ -110,9 +110,12 @@ button#enter:hover {
 }
 
 input {
-	font-size: 25px;
+	font-size: 20px;
 	width: 80px;
-	vertical-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-bottom: 7px;
+	padding-top: 4px;
 }
 
 div#restart button {
