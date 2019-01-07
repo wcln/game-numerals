@@ -52,16 +52,13 @@ div#numeral {
 }
 
 div#instructions {
-	 text-align: center;
 	 position: absolute;
 	 bottom: 0;
-	 left: 50%;
 }
 
 div#instructions > p {
 	margin: 0;
 	position: relative;
-	left: -50%;
 	width: 457px;
 	background-color: rgba(255, 255, 255, 0.5);
 	text-shadow: 1px 1px #e2e2e2;
