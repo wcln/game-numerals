@@ -155,7 +155,9 @@ function update() {
 }
 
 function check() {
-  var answer = $("#answer > input").val();
+  // Retrieve the answer from the input box.
+  // Remove spaces and commas.
+  var answer = $("#answer > input").val().replace(/\s+/g, '').replace(/,/g, '');
   if (answer == questions[counter].answer) {
     correct();
   } else {
