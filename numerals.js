@@ -1,7 +1,7 @@
 /**
- * BCLearningNetwork.com
+ * wcln.ca
  * Numerals
- * Colin Bernard
+ * Colin Perepelken
  * January 2019
  */
 
