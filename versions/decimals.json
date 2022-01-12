@@ -1,0 +1,50 @@
+[
+  {
+    "numeral": "Twenty and six tenths",
+    "answer": 20.6
+  },
+  {
+    "numeral": "Fifty-five thousandths",
+    "answer": 0.055
+  },
+  {
+    "numeral": "One hundred twenty three and fifty-eight hundredth",
+    "answer": 123.58
+  },
+{
+    "numeral": "Five thousand and four hundred seventy-eight thousandths",
+    "answer": 5000.478
+  },
+{
+    "numeral": "Twenty-three and four hundredths",
+    "answer": 23.04
+  },
+{
+    "numeral": "Three hundred forty and thirty-four hundredths",
+    "answer": 340.34
+  },
+{
+    "numeral": "Two and forty-six thousandths",
+    "answer": 2.046
+  },
+{
+    "numeral": "Seventy-eight thousand nine hundred fifteen",
+    "answer": 78915
+  },
+{
+    "numeral": "Three hundred seventy-two thousandths",
+    "answer": 0.372
+  },
+{
+    "numeral": "Two hundred and two thousandths",
+    "answer": 200.002
+  },
+{
+    "numeral": "Seven and thirty-nine hundredths",
+    "answer": 7.39
+  },
+{
+    "numeral": "Eight thousand and six tenths",
+    "answer": 8000.6
+  }
+]
